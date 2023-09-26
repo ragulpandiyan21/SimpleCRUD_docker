@@ -1,9 +1,38 @@
 <%- include('./layouts/header') %>
-
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
 <div class="container">
-    <div class="'row">
+    <div class="'row my-4">
         <div class="col-lg-12">
-            <h1>Home page content</h1>
+            <div class="table-responsive">
+                <table class="table table-striped text-centre">
+                    <thead>
+                        <tr class="table-dark">
+                            <th>ID</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>E-Mail</th>
+                            <th>Phone Number</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           <td>1</td>
+                           <td></td>
+                           <td>raf@gm</td>
+                           <td>raf@gm</td>
+                           <td>8508539378</td>
+                           <td>
+                            <a href="" class="text-success"><i class="fas fa-edit fa-lg mx-1"></i></a>
+                            <a href="" class="text-danger"><i class="fas fa-trash fa-lg mx-1"></i></a>
+                           </td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>

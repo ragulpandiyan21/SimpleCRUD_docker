@@ -30,7 +30,7 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: ragul
       ME_CONFIG_MONGODB_ADMINPASSWORD: mypassword
-      ME_CONFIG_MONGODB_URL: mongodb://ragul:mypassword@mongo:27017
+      ME_CONFIG_MONGODB_URL: mongodb://ragul:mypassword@mongo:27017/
 
 volumes:
   database-data:

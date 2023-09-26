@@ -1,5 +1,9 @@
 FROM node:latest
 
+ENV MONGO_DB_USERNAME=ragul \
+    MONGO_DB_PWD=mypassword
+
+
 WORKDIR /simplecrud
 
 COPY package.json /simplecrud/

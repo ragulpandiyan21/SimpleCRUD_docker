@@ -8,11 +8,11 @@ const app = express();
 const PORT = process.env.PORT || 3000
 const mongoURL = 'mongodb://ragul:mypassword@mongo:27017/node_crud'
 mongoose
-    .connect(mongoURL, {useNewUrlParser: true, 
-        useUnifiedTopology: true})
-    .then(()=> console.log("Succesfully connected to the database"))
-    .catch((e)=>{
-        console.log(e)});
+    .connect(mongoURL, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log("Successfully connected to the database"))
+    .catch((error) => {
+        console.error("Error connecting to the database:", error);
+    });
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
